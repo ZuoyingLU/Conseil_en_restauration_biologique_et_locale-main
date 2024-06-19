@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding="UTF-8"?>
+
+<restaurant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="sc_recette_trous.xsd">
+    <description>
+        <adresse_restaurant>
+            <rue>20 rue de Einstein</rue>
+            <code_postal>69621</code_postal>
+            <ville>Villeurbanne</ville>
+        </adresse_restaurant>
+    </description>
+
+    <stocks>
+        <ingredient id="01.13" conservation="30">Tomate</ingredient>
+        <ingredient id="01.14" conservation="15">Basilic</ingredient>
+        <ingredient id="01.15" conservation="50">Farine</ingredient>
+        <ingredient id="01.16" conservation="10">Egg</ingredient>
+        <ingredient id="01.17" conservation="40">Potato</ingredient>
+        <ingredient id="01.18" conservation="100">Piment</ingredient>
+    </stocks>
+
+    <recettes>
+        <recette nbCouverts="1" nbCouvertsParJour="50" service="dejeuner">
+            <titre>Salade Caprese</titre>
+            <ingredients>
+                <ingredient id="01.13" qte="1"></ingredient>
+                <ingredient id="01.14" qte="1"></ingredient>
+            </ingredients>
+        </recette>
+
+        <recette nbCouverts="1" nbCouvertsParJour="40" service="dejeuner">
+            <titre>Farine egg</titre>
+            <ingredients>
+                <ingredient id="01.16" qte="1"></ingredient>
+                <ingredient id="01.15" qte="1"></ingredient>
+            </ingredients>
+        </recette>
+
+        <recette nbCouverts="2" nbCouvertsParJour="100" service="diner">
+            <titre>Pizza</titre>
+            <ingredients>
+                <ingredient id="01.16" qte="1"></ingredient>
+                <ingredient id="01.15" qte="2"></ingredient>
+                <ingredient id="01.13" qte="2"></ingredient>
+            </ingredients>
+        </recette>
+    </recettes>
+</restaurant>
